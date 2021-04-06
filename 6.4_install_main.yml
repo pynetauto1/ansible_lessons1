@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Ubuntu tasks
+    include_tasks: 6.4a_ubuntu_tasks.yml
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Fedora tasks
+    include_tasks: 6.4b_fedora_tasks.yml
+    when: ansible_distribution == "Fedora"
