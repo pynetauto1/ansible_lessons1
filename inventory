@@ -9,4 +9,4 @@
 192.168.130.202 apache_package=httpd php_package=php
 
 [workstations]
-
+192.168.130.90
